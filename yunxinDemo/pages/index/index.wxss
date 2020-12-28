@@ -1,0 +1,44 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.zixun {
+  width: 130rpx;
+  height: 130rpx;
+  position: fixed;
+  bottom: 140rpx;
+  right: 50rpx;
+  z-index: 10000;
+}
+
+.zixun image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.zixun-btn{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 9rpx;
+  padding: 0;
+  opacity: -1;
+  z-index: 10;
+}
