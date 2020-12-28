@@ -11,6 +11,7 @@ demo中出现的账号密码，都是云信测试appkey下注册的账号密码�
 
 总的来说，如果不需要用户手动注册，需要静默注册云信账号进行聊天，则需要后端调云信的接口创建账号密码返回前端
 前端只要调用new IMController()这个实例即可登陆，如：
+    
     import IMController from '../../controller/im.js'
     new IMController({
       // 真正开发的时候要注意 账号密码是对应申请的appkey下
@@ -22,7 +23,9 @@ demo中出现的账号密码，都是云信测试appkey下注册的账号密码�
       // 你的账号
       account: 'kishn'
     })
+    
 然后在触发聊天的时候，将参数传入链接逻辑即可被云信im接管：
+    
     let account = 'kishn1'
     let chatType = 'p2p
     wx.navigateTo({
